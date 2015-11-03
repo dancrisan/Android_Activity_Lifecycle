@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+
+        ></include>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/timerValue"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="40sp"-->
+        <!--android:textColor="#ff5722"-->
+        <!--android:text="@string/timerVal"-->
+        <!--android:layout_below="@+id/toolbar"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="25dp" />-->
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_action"
+        android:background="@drawable/circle"
+        android:id="@+id/imageButton"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/imageButtonMusic"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/music_icon"
+        android:background="@drawable/circle"
+        android:id="@+id/imageButtonMusic"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="104dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageButton"
+        android:layout_alignStart="@+id/imageButton" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/activityStatus"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="93dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Press Button"
+        android:id="@+id/instructions"
+        android:layout_below="@+id/activityStatus"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
