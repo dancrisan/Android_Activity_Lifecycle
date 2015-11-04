@@ -43,7 +43,6 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TransparentActivity.class));
                 transparentActivityEnabled = true;
-
             }
         });
 
@@ -71,7 +70,7 @@ public class MainActivity extends ActionBarActivity {
 
         if(activityJustStarted){
             ((TextView)findViewById(R.id.activityStatus)).setText("Main Activity created and started");
-            ((TextView)findViewById(R.id.instructions)).setText("Click checkmark to pause Main Activity");
+            ((TextView)findViewById(R.id.instructions)).setText("Click checkmark button to pause Main Activity");
             activityJustStarted = false;
         }
 
@@ -119,7 +118,7 @@ public class MainActivity extends ActionBarActivity {
         Log.d("Tag Name", activityJustStarted.toString());
         if (transparentActivityEnabled){
             ((TextView)findViewById(R.id.activityStatus)).setText("Main Activity resumed");
-            ((TextView)findViewById(R.id.instructions)).setText("Click the device circle or square to send this app to the background");
+            ((TextView)findViewById(R.id.instructions)).setText("Click the device circle button or square button to send this app to the background");
             transparentActivityEnabled = false;
         }
         else if(activityJustRestarted){
